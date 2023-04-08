@@ -26,7 +26,7 @@ app.post('/submit', (req, res) => {
 
 
   db.query(sql, htmlData, (err, result) => {
-    if (err) throw err
+    if (err) throw err;
     return res.send({ state: 0, message: err });
     // console.log('插入数据库成功');
     return res.send({ state: 1, message: '插入数据库成功' });
