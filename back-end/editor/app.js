@@ -8,6 +8,8 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
+var testrouter = require('./routes/test')
+app.use('/test', testrouter)
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -39,3 +41,6 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
+//app.listen(3000, () => {
+  //console.log("Server running at http://127.0.0.1:3000");});
