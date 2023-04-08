@@ -30,7 +30,7 @@ if not database:
 else:
     cur.execute('USE '+ database)
     
-cur.execute('CREATE TABLE IF NOT EXISTS html_data (id int(10) NOT NULL, html_data MEDIUMBLOB)')
+cur.execute('CREATE TABLE IF NOT EXISTS html_data (id int(10) NOT NULL,id_f int(10) NOT NULL html_data MEDIUMBLOB)')
 print('数据表已建立')
 
 # cur.execute('select * from html_data')
